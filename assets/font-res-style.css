@@ -3,8 +3,14 @@ h1,h2,h3,h4,h5,h6{
     margin-block-start: 10px;
     margin-block-end: 10px;
 }
+a{
+    text-decoration: none;
+}
 body{
     font-family: 'Lexend', sans-serif;
+}
+.m-0{
+    margin:0px;
 }
 
 .white-f{

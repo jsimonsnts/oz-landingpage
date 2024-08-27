@@ -21,3 +21,50 @@ body{
     font-family: 'Inter-SemiBold';
     src: url('https://cdn.shopify.com/s/files/1/0474/8365/0202/files/Inter-SemiBold.woff2?v=1724731337') format('woff2');
 }
+
+.btn-shy-animate{
+    position: relative;
+    background: #FF9100;
+    display: block;
+    width: fit-content;
+    padding: 15px 30px;
+    margin: 0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.btn-shy-animate:hover:before{
+    right: -100%;
+    opacity: 1;
+    visibility: visible;
+}
+.btn-shy-animate:hover:after{
+    opacity: 1;
+    visibility: visible;
+    width: 0;
+}
+.btn-shy-animate:after, .btn-shy-animate:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(255, 255, 255, 0.35);
+}
+.btn-shy-animate:before {
+    right: 100%;
+    width: 60%;
+    -webkit-transition: .5s;
+    transition: .5s;
+    border-radius: 6px;
+    -webkit-transition-delay: .15s;
+    transition-delay: .15s;
+}
+.btn-shy-animate:after{
+    right: -10px;
+    border-radius: 6px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
