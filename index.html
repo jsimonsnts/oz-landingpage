@@ -74,29 +74,12 @@
     .landing-page-section .text-container{
         overflow: hidden;
     }
-    
-    @keyframes td-card-v4-floating-anim {
-        0%,100% {
-            -webkit-transform: translateY(0) var(--rotation);
-            transform: translateY(0) var(--rotation)
-        }
 
-        50% {
-            -webkit-transform: translateY(5%) var(--rotation);
-            transform: translateY(5%) var(--rotation)
-        }
-    }
     /* FOR MOBILE PHONE */
     @media only screen and (max-width: 768px) {
         .landing-page-section .inner-section{
             flex-direction: column-reverse;
             gap: 20px;
-        }
-        .landing-page-section .logo-container{
-            height: fit-content;
-        }
-        .landing-page-section .inner-section .col_50{
-            height: 100%;
         }
         .landing-page-section .heading, .landing-page-section .description{
             text-align: center;
@@ -110,12 +93,17 @@
             background-image: none;
             clip-path: none;
             align-items: flex-end;
-        }
-        .landing-page-section .logo-container .w-logo{
-            animation: td-card-v4-floating-anim 5s infinite;
+            height: fit-content;
+            padding:30px;
         }
         .landing-page-section .content-bg-container{
-            justify-content: flex-start;
+            justify-content: center;
+        }
+        .landing-page-section .content-bg-container .content-container{
+            padding:0px 20px;
+        }
+        .landing-page-section .page-width{
+            padding:0px;
         }
 
     }
@@ -128,12 +116,6 @@
             flex-direction: column-reverse;
             gap: 20px;
         }
-        .landing-page-section .logo-container{
-            height: fit-content;
-        }
-        .landing-page-section .inner-section .col_50{
-            height: 100%;
-        }
         .landing-page-section .heading, .landing-page-section .description{
             text-align: center;
             margin:0;
@@ -145,16 +127,18 @@
         .landing-page-section .logo-container{
             background-image: none;
             clip-path: none;
-            background-color: unset;
             align-items: flex-end;
-        }
-        .landing-page-section .logo-container .w-logo{
-            background-color: #fff;        
-            border-radius: 50%;
-            padding: 30px;
+            height: fit-content;
+            padding:30px;
         }
         .landing-page-section .content-bg-container{
-            justify-content: flex-start;
+            justify-content: center;
+        }
+        .landing-page-section .content-bg-container .content-container{
+            padding:0px 20px;
+        }
+        .landing-page-section .page-width{
+            padding:0px;
         }
     }
 
