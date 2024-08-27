@@ -1,0 +1,23 @@
+
+/*SCROLL BAR*/
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #0d723a;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+body{
+    display:block;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: url('https://cdn.shopify.com/s/files/1/0474/8365/0202/files/Inter-SemiBold.woff2?v=1724731337') format('woff2');
+}

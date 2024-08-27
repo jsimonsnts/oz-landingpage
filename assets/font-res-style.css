@@ -1,0 +1,97 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Lexend', sans-serif;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+body{
+    font-family: 'Lexend', sans-serif;
+}
+
+.white-f{
+    color: #fff;
+}
+.gray-f{
+    color: #cacaca;
+}
+.main-color{
+    color: 0d723a;
+}
+.f-w-300{
+    font-weight: 300;
+}
+.f-w-400{
+    font-weight: 400;
+}
+.f-w-500{
+    font-weight: 500;
+}
+.f-w-600{
+    font-weight: 600;
+}
+.f-w-bold{
+    font-weight: bold;
+}
+.f-w-bolder{
+    font-weight: bolder;
+}
+
+
+/* FOR MOBILE PHONE */
+@media only screen and (max-width: 768px) {
+    h1{
+        font-size:30px;
+    }
+}
+/* TABLETS  */ 
+@media only screen and (min-width: 768px) {
+    h1{
+        font-size:30px;
+    }
+}
+ @media only screen and (min-width: 800px) {
+    h1{
+        font-size:30px;
+    }
+}
+@media (min-width: 1024px) and (orientation: portrait) {
+    h1{
+        font-size:30px;
+    }
+}
+
+ /* COMPUTERS */
+@media (min-width: 1024px) and (orientation: landscape) {
+    h1{
+        font-size:30px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    h1{
+        font-size:30px;
+    }
+}
+@media only screen and (min-width: 1366px) {
+    h1{
+        font-size:35px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    h1{
+        font-size:35px;
+    }
+}
+@media only screen and (min-width: 1536px) {
+    h1{
+        font-size:40px;
+    }
+}
+@media only screen and (min-width: 1600px) {
+    h1{
+        font-size:45px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    h1{
+        font-size:50px;
+    }
+}

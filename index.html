@@ -1,44 +1,123 @@
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<link href="file:///D:/PERSONAL_FILES/CODE/OZ%20Landing%20Page/oz-landingpage/assets/global-style.css" rel="stylesheet">
+<link href="file:///D:/PERSONAL_FILES/CODE/OZ%20Landing%20Page/oz-landingpage/assets/res-style.css" rel="stylesheet">
+<link href="file:///D:/PERSONAL_FILES/CODE/OZ%20Landing%20Page/oz-landingpage/assets/font-res-style.css" rel="stylesheet">
+
+
+<!-- FONT CDN -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
 <style>
-    @font-face {
-        font-family: 'Inter-SemiBold';
-        src: url('https://cdn.shopify.com/s/files/1/0474/8365/0202/files/Inter-SemiBold.woff2?v=1724731337') format('woff2');
-    }
-    .main-bg-color{
-        background-color: #0d723a;
-    }
-    .pre-load{
+    pre-loader{
+        background-color: #fff;
         background-image:url('file:///D:/PERSONAL_FILES/CODE/OZ%20Landing%20Page/oz-landingpage/assets/preloader.svg');
         height: 100vh;
+        width: 100%;
         background-size: 120px;
         background-repeat: no-repeat;
         background-position: center;
         position: fixed;
         top: 0;
     }
-
-    .w-logo{
+    .landing-page-section{
+        height:100vh;
+        background-color: #0d723a;
+    }
+    .landing-page-section .w-logo{
         max-width: 250px;
     }
+    .landing-page-section .page-width{
+        height: 100%;
+    }
+    .landing-page-section .inner-section{
+        display:flex;
+        height: 100%;
+        align-items: center;
+    }
+    .landing-page-section .logo-container{
+        background-color: #fff;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+    }   
+    .landing-page-section  .content-bg-container{
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: url('file:///D:/PERSONAL_FILES/CODE/OZ%20Landing%20Page/oz-landingpage/assets/bg-elements-1.png');
+        background-size: 70%;
+        background-position: bottom left;
+        background-repeat: no-repeat;
+    }
 
-    /*SCROLL BAR*/
-    ::-webkit-scrollbar {
-        width: 7px;
+
+    /* FOR MOBILE PHONE */
+    @media only screen and (max-width: 768px) {
+        .landing-page-section .inner-section{
+            flex-direction: column-reverse;
+        }
+        .landing-page-section .logo-container{
+            height: fit-content;
+        }
+        .landing-page-section .inner-section .col_50{
+            height: 100%;
+        }
+
     }
-    ::-webkit-scrollbar-track {
-        background: #f1f1f1; 
+
+    /* ipad Air */
+    @media only screen 
+    and (min-device-width : 768px) 
+    and (max-device-width : 1024px) {
+        .landing-page-section .inner-section{
+            flex-direction: column-reverse;
+        }
+        .landing-page-section .logo-container{
+            height: fit-content;
+        }
+        .landing-page-section .inner-section .col_50{
+            height: 100%;
+        }
     }
-    ::-webkit-scrollbar-thumb {
-        background: #0d723a;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555; 
-    }
+
 </style>
-<div class="pre-load">
+<pre-loader>
 
-</div>
-<div class="page-width">
-    <div class="inner-section">
-        <img class="w-logo" src="file:///D:/PERSONAL_FILES/CODE/OZ%20Landing%20Page/oz-landingpage/assets/one-zambales-logo.png">
+</pre-loader>
+<section class="landing-page-section">
+    <div class="page-width">
+        <div class="inner-section">
+            <div class="col_50 content-bg-container">
+                <div class="content-container">
+                    <h1 class="heading f-w-bolder white-f">Connecting Zambales</h1>
+                    <h1 class="heading f-w-bolder white-f">Empowering Local Business</h1>
+                    <p class="description gray-f">Join the Waitlist</p>
+                </div>
+            </div>
+            <div class="col_50 logo-container">
+                <img class="w-logo" src="file:///D:/PERSONAL_FILES/CODE/OZ%20Landing%20Page/oz-landingpage/assets/one-zambales-logo.png">
+            </div>
+        </div>
     </div>
-</div>
+</section>
+
+<script>
+    
+    window.onload = function() {
+        
+        setTimeout(function() {
+            $('pre-loader').fadeOut();
+            $('html').removeClass('preload');
+            console.log('here')
+        }, 1000);
+    };
+
+</script>

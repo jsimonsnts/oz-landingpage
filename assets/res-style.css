@@ -1,0 +1,119 @@
+
+.col_5{
+    width: 5%;
+}
+.col_10{
+    width: 10%;
+}
+.col_15{
+    width: 15%;
+}
+.col_20{
+    width: 20%;
+}
+.col_25{
+    width: 25%;
+}
+.col_30{
+    width: 30%;
+}
+.col_35{
+    width: 35%;
+}
+.col_40{
+    width: 40%;
+}
+.col_45{
+    width: 45%;
+}
+.col_50{
+    width: 50%;
+}
+.col_55{
+    width: 55%;
+}
+.col_60{
+    width: 60%;
+}
+.col_65{
+    width: 65%;
+}
+.col_70{
+    width: 70%;
+}
+.col_75{
+    width: 75%;
+}
+.col_80{
+    width: 80%;
+}
+.col_85{
+    width: 85%;
+}
+.col_90{
+    width: 90%;
+}
+.col_95{
+    width: 95%;
+}
+.col_100{
+    width: 100%;
+}
+
+.page-width{
+    max-width: 1500px;
+    margin:auto;
+    padding:0px 40px;
+}
+
+
+/* FOR MOBILE PHONE */
+@media only screen and (max-width: 768px) {
+    .col_5, .col_10, .col_15, .col_20, .col_25, .col_30, .col_35, .col_40, .col_45, .col_50, .col_55, .col_60, .col_65, .col_70, .col_75, .col_80, .col_85, .col_90, .col_95{
+        width: 100%;
+    }
+    .page-width{
+        padding:0px 20px;
+    }
+}
+
+/* ipad Air */
+@media only screen 
+  and (min-device-width : 768px) 
+  and (max-device-width : 1024px) {
+    .col_5, .col_10, .col_15, .col_20, .col_25, .col_30, .col_35, .col_40, .col_45, .col_50, .col_55, .col_60, .col_65, .col_70, .col_75, .col_80, .col_85, .col_90, .col_95{
+        width: 100%;
+    }
+    .page-width{
+        padding:0px 30px;
+    }
+}
+
+
+
+/* FOR MOBILE PHONE */
+@media only screen and (max-width: 768px) {
+}
+/* TABLETS  */ 
+@media only screen and (min-width: 768px) {
+}
+ @media only screen and (min-width: 800px) {
+}
+@media (min-width: 1024px) and (orientation: portrait) {
+}
+
+ /* COMPUTERS */
+@media (min-width: 1024px) and (orientation: landscape) {
+}
+@media only screen and (min-width: 1280px) {
+}
+@media only screen and (min-width: 1366px) {
+}
+@media only screen and (min-width: 1440px) {
+}
+@media only screen and (min-width: 1536px) {
+}
+@media only screen and (min-width: 1600px) {
+}
+@media only screen and (min-width: 1920px) {
+}
