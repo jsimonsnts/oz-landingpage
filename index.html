@@ -74,6 +74,18 @@
     .landing-page-section .text-container{
         overflow: hidden;
     }
+    
+    @keyframes td-card-v4-floating-anim {
+        0%,100% {
+            -webkit-transform: translateY(0) var(--rotation);
+            transform: translateY(0) var(--rotation)
+        }
+
+        50% {
+            -webkit-transform: translateY(5%) var(--rotation);
+            transform: translateY(5%) var(--rotation)
+        }
+    }
     /* FOR MOBILE PHONE */
     @media only screen and (max-width: 768px) {
         .landing-page-section .inner-section{
@@ -88,6 +100,7 @@
         }
         .landing-page-section .heading, .landing-page-section .description{
             text-align: center;
+            margin:0;
         }
         .landing-page-section .btn-shy-animate{
             margin-left:auto;
@@ -96,13 +109,10 @@
         .landing-page-section .logo-container{
             background-image: none;
             clip-path: none;
-            background-color: unset;
             align-items: flex-end;
         }
         .landing-page-section .logo-container .w-logo{
-            background-color: #fff;     
-            border-radius: 47%;
-            padding: 30px;
+            animation: td-card-v4-floating-anim 5s infinite;
         }
         .landing-page-section .content-bg-container{
             justify-content: flex-start;
@@ -126,6 +136,7 @@
         }
         .landing-page-section .heading, .landing-page-section .description{
             text-align: center;
+            margin:0;
         }
         .landing-page-section .btn-shy-animate{
             margin-left:auto;
@@ -139,7 +150,7 @@
         }
         .landing-page-section .logo-container .w-logo{
             background-color: #fff;        
-            border-radius: 47%;
+            border-radius: 50%;
             padding: 30px;
         }
         .landing-page-section .content-bg-container{
